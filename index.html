@@ -25,13 +25,13 @@
             <li><p><span>And much more!</span></p></li>
           </ul>
         </div>
-        <form id="form" action="/">
-          <div class="input-container">
+        <form class="sign-up-form">
+          <div class="sign-up-container">
             <div class="labels">
-              <label id="email-label" for="email-input" >Email address</label>
-              <div id="error-label" class="error"></div>
+              <label class="email-label" for="email-input" >Email address</label>
+              <div class="error-label">Valid email required</div>
             </div>
-            <input id="email-input" class="email" type="text" placeholder="email@company.com" required>
+            <input id="email-input" type="text" placeholder="email@company.com" required>
             <button class="subscribe-btn" type="submit">Subscribe to monthly newsletter</button>
           </div>
         </form>
@@ -46,22 +46,27 @@
 
   <div class="success-card hidden">
     <div class="thanks-container">
+      <div class="top">
         <div class="check-container">
           <img class="checkmark-image">
         </div>
           <h1 class="heading">Thanks for subscribing!</h1>
-          <p class="description">A confirmation email has been sent to <span class="email-address">ash@loremcompany.com</span>
+          <p class="description">A confirmation email has been sent to <span class="email-address">ash@loremcompany.com</span>.
             Please open it and click the button inside to confirm your subscription.
           </p>
+        </div>
+        <div class="bottom">
             <a href="index.html">
             <button class="dismiss-btn" type="submit">
                 Dismiss message
             </button>
+          </div>
           </a>
-      </div>
     </div>
+  </div>
+
 </main>
-    <script defer src="script.js"></script>
+<script defer src="script.js"></script> 
 </body>
   <footer>
     <div class="attribution">
